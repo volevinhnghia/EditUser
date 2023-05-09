@@ -46,6 +46,9 @@
         flex-wrap: nowrap;
         flex-direction: column;
       }
+      .name {
+        display: flex;
+      }
     </style>
   </head>
   <body style="margin: 0">
@@ -112,58 +115,82 @@
 
       <div class="mainColumn">
         <h1>Edit profile</h1>
-        <div>
-          <label for="fname"> Enter First Name: </label><br />
-          <input
-            type="text"
-            id="fname"
-            name="fname"
-            placeholder="Enter First Name"
-          /><br />
-          <label for="lname"> Enter Last Name: </label><br />
-          <input
-            type="text"
-            id="lname"
-            name="lname"
-            placeholder="Enter Last Name"
-          />
-        </div>
-        <div>
-          <label for="email"> Enter Email: </label><br />
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-          />
-        </div>
-        <div>
-          <label for="address"> Address: </label><br />
-          <input
-            type="text"
-            id="address"
-            name="address"
-            placeholder="33062 Zboncak isle"
-          />
-        </div>
-        <div>
-          <label for="contact_number"> Contact Number: </label><br />
-          <input
-            type="number"
-            id="contaxt_number"
-            name="contaxt_number"
-            placeholder="58077.79"
-          />
-        </div>
-        <div>
-          <label for="city"> City: </label><br />
-          <select name="" id="country">
-            <option value="india">India</option>
-            <option value="india">India</option>
-            <option value="india">India</option>
-            <option value="india">India</option>
-          </select>
-        </div>
+        <table>
+          <tr>
+            <td><label for="fname"> Enter First Name: </label></td>
+            <td><label for="lname"> Enter Last Name: </label></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="Enter First Name"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="Enter Last Name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email"> Enter Email: </label><br /></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="address"> Address: </label><br /></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="33062 Zboncak isle"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="contact_number"> Contact Number: </label><br /></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="contaxt_number"
+                name="contaxt_number"
+                placeholder="58077.79"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="city"> City: </label><br /></td>
+          </tr>
+          <tr>
+            <td>
+              <select name="" id="country">
+                <option value="india">India</option>
+                <option value="india">India</option>
+                <option value="india">India</option>
+                <option value="india">India</option>
+              </select>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
   </body>
