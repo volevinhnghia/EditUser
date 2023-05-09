@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EditProfile</title>
+    <style>
+      ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+      }
+      li {
+        list-style-type: none;
+        padding: 25px 15px;
+        margin-left: -40px;
+      }
+      .contains {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+      }
+      .sizebar {
+        background-color: #ffc297;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .sizebar_above {
+        align-items: center;
+        display: flex;
+      }
+      .sizebar_below {
+        align-items: center;
+        display: flex;
+      }
+      .seaconColumn {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body style="margin: 0">
+    <div class="contains">
+      <div class="sizebar">
+        <div class="sizebar_above">
+          <ul>
+            <li>
+              <img src="./icon/logo.svg" alt="" />
+            </li>
+            <li>
+              <img src="./icon/home.svg" alt="" />
+            </li>
+            <li>
+              <img src="./icon/bell.svg" alt="" />
+            </li>
+            <li>
+              <img src="./icon/catelog.svg" alt="" />
+            </li>
+            <li>
+              <img src="./icon/static.svg" alt="" />
+            </li>
+            <li>
+              <img src="./icon/human.svg" alt="" />
+            </li>
+          </ul>
+        </div>
+        <div class="sizebar_below">
+          <ul>
+            <li>
+              <img src="./icon/setting.svg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="seaconColumn">
+        <ul>
+          <il>
+            <img src="./icon/arrow.svg" alt="" />
+            <p>Settings</p>
+          </il>
+          <il>
+            <img src="./icon/pen.svg" alt="" />
+            <p>Edit Profile</p>
+          </il>
+          <il>
+            <img src="./icon/bell.svg" alt="" />
+            <p>Notification</p>
+          </il>
+          <il>
+            <img src="./icon/lock.svg" alt="" />
+            <p>Security</p>
+          </il>
+          <il>
+            <img src="./icon/settingicon.svg" alt="" />
+            <p>Apperance</p>
+          </il>
+          <il>
+            <img src="./icon/questionmask.svg" alt="" />
+            <p>Help</p>
+          </il>
+        </ul>
+      </div>
+
+      <div>
+        <h1>Edit profile</h1>
+        <label for="fname"> Enter First Name: </label><br />
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="Enter First Name"
+        /><br />
+        <label for="lname"> Enter Last Name: </label><br />
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="Enter Last Name"
+        />
+      </div>
+      <div>
+        <label for="email"> Enter Email: </label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+        />
+      </div>
+      <div>
+        <label for="address"> Address: </label><br />
+        <input
+          type="text"
+          id="address"
+          name="address"
+          placeholder="33062 Zboncak isle"
+        />
+      </div>
+      <div>
+        <label for="contact_number"> Contact Number: </label><br />
+        <input
+          type="number"
+          id="contaxt_number"
+          name="contaxt_number"
+          placeholder="58077.79"
+        />
+      </div>
+      <div>
+        <label for="city"> City: </label><br />
+        <select name="" id="country">
+          <option value="india">India</option>
+          <option value="india">India</option>
+          <option value="india">India</option>
+          <option value="india">India</option>
+        </select>
+      </div>
+    </div>
+  </body>
+</html>
