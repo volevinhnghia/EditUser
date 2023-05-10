@@ -1,0 +1,163 @@
+ul.sizebar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+ul.scColumn {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+li.firstCol {
+  list-style-type: none;
+  padding: 25px 15px;
+  margin-left: -40px;
+}
+li.seaconCol {
+  display: flex;
+  list-style-type: none;
+  padding: 25px 15px;
+  margin-left: -40px;
+  width: 170px;
+  height: 50px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+.contains {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  border: solid 1px #ffc297;
+}
+.sizebar {
+  background-color: #ffc297;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.sizebar_above {
+  align-items: center;
+  display: flex;
+}
+.sizebar_below {
+  align-items: center;
+  display: flex;
+}
+.seaconColumn {
+  display: flex;
+  border-right: 1px solid #858585;
+  padding: 0px 25px;
+  width: 20%;
+  flex-direction: column;
+}
+.mainColumn {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 80%;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+.name {
+  display: flex;
+}
+td.center {
+  text-align: center;
+}
+td.setting {
+  text-align: center;
+  padding: 40px 0px;
+}
+td.text {
+  height: 80px;
+}
+p.secCol {
+  display: flex;
+}
+.ipsetting {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+div.ipContains {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  height: 100%;
+}
+.nameipsetting {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.ipsettingselect {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.nameSetting {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+}
+div.button {
+  display: flex;
+  width: 45%;
+  justify-content: space-between;
+}
+input[type="email"] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url(./icon/check.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 15px 40px 15px 15px;
+}
+input,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  padding: 15px 40px 15px 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .seaconColumn {
+    display: none;
+  }
+  .nameSetting {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+  }
+  .ipsettingselect {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nameipsetting {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  div.button {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+  }
+}

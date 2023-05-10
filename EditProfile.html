@@ -5,114 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EditProflie</title>
-    <style>
-      ul.sizebar {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
-      }
-      ul.scColumn {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-      }
-      li.firstCol {
-        list-style-type: none;
-        padding: 25px 15px;
-        margin-left: -40px;
-      }
-      li.seaconCol {
-        display: flex;
-        list-style-type: none;
-        padding: 25px 15px;
-        margin-left: -40px;
-        width: 170px;
-        height: 50px;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-      }
-      .contains {
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: row;
-      }
-      .sizebar {
-        background-color: #ffc297;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .sizebar_above {
-        align-items: center;
-        display: flex;
-      }
-      .sizebar_below {
-        align-items: center;
-        display: flex;
-      }
-      .seaconColumn {
-        display: flex;
-        border-right: 1px solid #858585;
-        padding: 0px 25px;
-        width: 20%;
-        flex-direction: column;
-      }
-      .mainColumn {
-        display: flex;
-        flex-wrap: nowrap;
-        width: 80%;
-        flex-direction: column;
-        margin-left: 50px;
-        margin-top: 25px;
-      }
-      .name {
-        display: flex;
-      }
-      td.center {
-        text-align: center;
-      }
-      td.setting {
-        text-align: center;
-        padding: 40px 0px;
-      }
-      td.text {
-        height: 80px;
-      }
-      p.secCol {
-        display: flex;
-      }
-      .ipsetting {
-        display: flex;
-        flex-direction: column;
-      }
-      div.ipContains {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        justify-content: space-between;
-        height: 60%;
-      }
-      .nameipsetting {
-        display: flex;
-        flex-direction: column;
-      }
-      div.nameSetting {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        width: 70%;
-      }
-      div.button {
-        display: flex;
-        width: 30%;
-        justify-content: space-between;
-      }
-    </style>
+    <link rel="stylesheet" href="Profile.css">
   </head>
   <body style="margin: 0">
     <div class="contains">
@@ -237,12 +130,12 @@
             </div>
           </div>
           <div class="ipsetting">
-            <label for="emali">Emali: </label>
+            <label for="email">Email: </label>
             <input
-              type="emali"
-              id="emali"
-              name="emali"
-              placeholder="Enter your emali"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
             />
           </div>
           <div class="ipsetting">
@@ -263,7 +156,7 @@
               placeholder="58077.79"
             />
           </div>
-          <div class="ipsetting">
+          <div class="ipsettingselect">
             <label for="city"> City: </label>
             <select name="country" id="country">
               <option value="india">India</option>
