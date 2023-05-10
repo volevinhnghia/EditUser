@@ -4,18 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EditProfile</title>
+    <title>EditProflie</title>
     <style>
-      .ulsizebar {
+      ul.sizebar {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
       }
-      li {
+      ul.scColumn {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+      li.firstCol {
         list-style-type: none;
         padding: 25px 15px;
         margin-left: -40px;
+      }
+      li.seaconCol {
+        display: flex;
+        list-style-type: none;
+        padding: 25px 15px;
+        margin-left: -40px;
+        width: 170px;
+        height: 50px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
       }
       .contains {
         display: flex;
@@ -40,14 +56,61 @@
       .seaconColumn {
         display: flex;
         border-right: 1px solid #858585;
+        padding: 0px 25px;
+        width: 20%;
+        flex-direction: column;
       }
       .mainColumn {
         display: flex;
         flex-wrap: nowrap;
+        width: 80%;
         flex-direction: column;
+        margin-left: 50px;
+        margin-top: 25px;
       }
       .name {
         display: flex;
+      }
+      td.center {
+        text-align: center;
+      }
+      td.setting {
+        text-align: center;
+        padding: 40px 0px;
+      }
+      td.text {
+        height: 80px;
+      }
+      p.secCol {
+        display: flex;
+      }
+      .ipsetting {
+        display: flex;
+        flex-direction: column;
+      }
+      div.ipContains {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: space-between;
+        height: 60%;
+      }
+      .nameipsetting {
+        display: flex;
+        flex-direction: column;
+      }
+      div.nameSetting {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 70%;
+      }
+      div.button {
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
       }
     </style>
   </head>
@@ -55,142 +118,169 @@
     <div class="contains">
       <div class="sizebar">
         <div class="sizebar_above">
-          <ul class="ulsizebar">
-            <li>
+          <ul class="sizebar">
+            <li class="firstCol">
               <img src="./icon/logo.svg" alt="" />
             </li>
-            <li>
+            <li class="firstCol">
               <img src="./icon/home.svg" alt="" />
             </li>
-            <li>
+            <li class="firstCol">
               <img src="./icon/bell.svg" alt="" />
             </li>
-            <li>
+            <li class="firstCol">
               <img src="./icon/catelog.svg" alt="" />
             </li>
-            <li>
+            <li class="firstCol">
               <img src="./icon/static.svg" alt="" />
             </li>
-            <li>
+            <li class="firstCol">
               <img src="./icon/human.svg" alt="" />
             </li>
           </ul>
         </div>
         <div class="sizebar_below">
           <ul>
-            <li>
+            <li class="firstCol">
               <img src="./icon/setting.svg" alt="" />
             </li>
           </ul>
         </div>
       </div>
       <div class="seaconColumn">
-        <ul>
-          <il>
-            <img src="./icon/arrow.svg" alt="" />
-            <p>Settings</p>
-          </il>
-          <il>
-            <img src="./icon/pen.svg" alt="" />
-            <p>Edit Profile</p>
-          </il>
-          <il>
-            <img src="./icon/bell.svg" alt="" />
-            <p>Notification</p>
-          </il>
-          <il>
-            <img src="./icon/lock.svg" alt="" />
-            <p>Security</p>
-          </il>
-          <il>
-            <img src="./icon/settingicon.svg" alt="" />
-            <p>Apperance</p>
-          </il>
-          <il>
-            <img src="./icon/questionmask.svg" alt="" />
-            <p>Help</p>
-          </il>
-        </ul>
+        <table>
+          <tr>
+            <td class="setting">
+              <img
+                src="./icon/arrow.svg"
+                alt=""
+                width="14.82px"
+                height="24px"
+              />
+            </td>
+            <td class="setting"><p class="secCol">Settings</p></td>
+          </tr>
+          <tr>
+            <td class="center">
+              <img
+                src="./icon/pen.svg"
+                alt=""
+                width="33.75px"
+                height="33.75px"
+              />
+            </td>
+            <td class="text"><p class="secCol">Edit Proflie</p></td>
+          </tr>
+          <tr>
+            <td class="center">
+              <img
+                src="./icon/blackbell.svg"
+                alt=""
+                width="26.67px"
+                height="32.5px"
+              />
+            </td>
+            <td class="text"><p class="secCol">Notification</p></td>
+          </tr>
+          <tr>
+            <td class="center">
+              <img src="./icon/lock.svg" alt="" width="26.67px" height="35px" />
+            </td>
+            <td class="text"><p class="secCol">Security</p></td>
+          </tr>
+          <tr>
+            <td class="center">
+              <img
+                src="./icon/settingicon.svg"
+                alt=""
+                width="32.42px"
+                height="33.33px"
+              />
+            </td>
+            <td class="text"><p class="secCol">Apperance</p></td>
+          </tr>
+          <tr>
+            <td class="center">
+              <img
+                src="./icon/questionmask.svg"
+                alt=""
+                width="33.33px"
+                height="33.33px"
+              />
+            </td>
+            <td class="text" s><p class="secCol">Help</p></td>
+          </tr>
+        </table>
       </div>
 
       <div class="mainColumn">
-        <h1>Edit profile</h1>
-        <table>
-          <tr>
-            <td><label for="fname"> Enter First Name: </label></td>
-            <td><label for="lname"> Enter Last Name: </label></td>
-          </tr>
-          <tr>
-            <td>
+        <h1>Edit proflie</h1>
+        <div class="ipContains">
+          <div class="nameSetting">
+            <div class="nameipsetting">
+              <label for="fname"> First Name: </label>
               <input
                 type="text"
                 id="fname"
                 name="fname"
                 placeholder="Enter First Name"
               />
-            </td>
-            <td>
+            </div>
+            <div class="nameipsetting">
+              <label for="lname"> Last Name: </label>
               <input
                 type="text"
                 id="lname"
                 name="lname"
                 placeholder="Enter Last Name"
               />
-            </td>
-          </tr>
-          <tr>
-            <td><label for="email"> Enter Email: </label><br /></td>
-          </tr>
-          <tr>
-            <td>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your email"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><label for="address"> Address: </label><br /></td>
-          </tr>
-          <tr>
-            <td>
-              <input
-                type="text"
-                id="address"
-                name="address"
-                placeholder="33062 Zboncak isle"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><label for="contact_number"> Contact Number: </label><br /></td>
-          </tr>
-          <tr>
-            <td>
-              <input
-                type="number"
-                id="contaxt_number"
-                name="contaxt_number"
-                placeholder="58077.79"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><label for="city"> City: </label><br /></td>
-          </tr>
-          <tr>
-            <td>
-              <select name="" id="country">
-                <option value="india">India</option>
-                <option value="india">India</option>
-                <option value="india">India</option>
-                <option value="india">India</option>
-              </select>
-            </td>
-          </tr>
-        </table>
+            </div>
+          </div>
+          <div class="ipsetting">
+            <label for="emali">Emali: </label>
+            <input
+              type="emali"
+              id="emali"
+              name="emali"
+              placeholder="Enter your emali"
+            />
+          </div>
+          <div class="ipsetting">
+            <label for="address"> Address: </label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="33062 Zboncak isle"
+            />
+          </div>
+          <div class="ipsetting">
+            <label for="contact_number"> Contact Number: </label>
+            <input
+              type="tel"
+              id="contaxt_number"
+              name="contaxt_number"
+              placeholder="58077.79"
+            />
+          </div>
+          <div class="ipsetting">
+            <label for="city"> City: </label>
+            <select name="country" id="country">
+              <option value="india">India</option>
+              <option value="india">India</option>
+              <option value="india">India</option>
+              <option value="india">India</option>
+            </select>
+          </div>
+          <div class="button">
+            <div>
+              <input type="button" value="Cancel" />
+            </div>
+            <div>
+              <input type="submit" value="Save" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
