@@ -134,7 +134,18 @@ select {
   background-color: white;
   padding: 15px 40px 15px 15px;
 }
-
+input[type="submit"]{
+  background-color: orange;
+  width: 100px;
+  border-radius: 8px;
+  font-size: 24px;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+input[type="submit"]:hover{
+  transform: scale(1.2);
+  
+}
 @media screen and (max-width: 768px) {
   .seaconColumn {
     display: none;
@@ -159,4 +170,5 @@ select {
     width: 50%;
     justify-content: space-between;
   }
+  
 }
