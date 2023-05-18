@@ -7,7 +7,7 @@
     <title>EditProflie</title>
     <link rel="stylesheet" href="Profile.css">
   </head>
-  <body style="margin: 0">
+  <body style="margin: 0" onload="addProfile()">
     <div class="contains">
       <div class="sizebar">
         <div class="sizebar_above">
@@ -32,18 +32,18 @@
             </li>
           </ul>
         </div>
-        <div class="sizebar_below">
+        <div class="sizebar_below" >
           <ul>
-            <li class="firstCol">
+            <li class="firstCol" onclick="openSidebar()">
               <img src="./icon/setting.svg" alt="" />
             </li>
           </ul>
         </div>
       </div>
-      <div class="seaconColumn">
-        <table>
+      <div class="seaconColumn" id="seaconSidebar" data-tag="channelList">
+        <table >
           <tr>
-            <td class="setting">
+            <td class="setting" onclick="hideSidebar()">
               <img
                 src="./icon/arrow.svg"
                 alt=""
@@ -53,7 +53,7 @@
             </td>
             <td class="setting"><p class="secCol">Settings</p></td>
           </tr>
-          <tr>
+          <tr onclick="switchChannel(2)" class="selected">
             <td class="center">
               <img
                 src="./icon/pen.svg"
@@ -64,7 +64,7 @@
             </td>
             <td class="text"><p class="secCol">Edit Proflie</p></td>
           </tr>
-          <tr>
+          <tr onclick="switchChannel(3)">
             <td class="center">
               <img
                 src="./icon/blackbell.svg"
@@ -75,13 +75,13 @@
             </td>
             <td class="text"><p class="secCol">Notification</p></td>
           </tr>
-          <tr>
+          <tr onclick="switchChannel(4)">
             <td class="center">
               <img src="./icon/lock.svg" alt="" width="26.67px" height="35px" />
             </td>
             <td class="text"><p class="secCol">Security</p></td>
           </tr>
-          <tr>
+          <tr onclick="switchChannel(5)">
             <td class="center">
               <img
                 src="./icon/settingicon.svg"
@@ -92,7 +92,7 @@
             </td>
             <td class="text"><p class="secCol">Apperance</p></td>
           </tr>
-          <tr>
+          <tr onclick="switchChannel(6)">
             <td class="center">
               <img
                 src="./icon/questionmask.svg"
@@ -101,13 +101,16 @@
                 height="33.33px"
               />
             </td>
-            <td class="text" s><p class="secCol">Help</p></td>
+            <td class="text"><p class="secCol">Help</p></td>
           </tr>
         </table>
       </div>
 
       <div class="mainColumn">
-        <h1>Edit proflie</h1>
+        <div class="mainColumn-head">
+          <h1>Edit proflie</h1>
+          <img src="" alt="" id="avata" onclick="logout()">
+        </div>
         <div class="ipContains">
           <div class="nameSetting">
             <div class="nameipsetting">
@@ -136,6 +139,7 @@
               id="email"
               name="email"
               placeholder="Enter your email"
+              onchange="isValidateEmail(document.getElementById('email'))"
             />
           </div>
           <div class="ipsetting">
@@ -151,30 +155,32 @@
             <label for="contact_number"> Contact Number: </label>
             <input
               type="tel"
-              id="contaxt_number"
-              name="contaxt_number"
+              id="contact_number"
+              name="contact_number"
               placeholder="58077.79"
             />
           </div>
           <div class="ipsettingselect">
             <label for="city"> City: </label>
-            <select name="country" id="country">
-              <option value="india">India</option>
-              <option value="india">India</option>
-              <option value="india">India</option>
-              <option value="india">India</option>
+            <select name="city" id="city">
+              <option value="-Choice your city-">-Choice your city-</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
             </select>
           </div>
           <div class="button">
             <div>
-              <input type="button" value="Cancel" />
+              <input type="button" value="Cancel" onclick="resetInputFunc()"/>
             </div>
             <div>
-              <input type="submit" value="Save" />
+              <input type="submit" value="Save" onclick="isEmpty()" />
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>

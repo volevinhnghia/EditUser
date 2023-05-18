@@ -60,7 +60,18 @@ li.seaconCol {
   flex-direction: column;
   margin: 25px 25px 20px 50px;
 }
-
+.mainColumn-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainColumn-head img{
+  height: 100px;
+  width: 100px;
+  border: solid 1px black;
+  border-radius: 50px;
+}
 .name {
   display: flex;
 }
@@ -118,8 +129,8 @@ input[type="email"] {
   border: 2px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
-  background-color: white;
   background-image: url(./icon/check.svg);
+  background-color: white;
   background-position: right;
   background-repeat: no-repeat;
   padding: 15px 40px 15px 15px;
@@ -134,17 +145,25 @@ select {
   background-color: white;
   padding: 15px 40px 15px 15px;
 }
-input[type="submit"]{
+input[type="submit"] {
   background-color: orange;
   width: 100px;
   border-radius: 8px;
   font-size: 24px;
+
   transition-property: transform;
   transition-duration: 1s;
 }
-input[type="submit"]:hover{
+input[type="submit"]:hover {
   transform: scale(1.2);
-  
+}
+.selected {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.selected .center img {
+  border-radius: 50%;
+  border: #000000 thin solid;
 }
 @media screen and (max-width: 768px) {
   .seaconColumn {
@@ -170,5 +189,15 @@ input[type="submit"]:hover{
     width: 50%;
     justify-content: space-between;
   }
-  
+}
+
+.validInput,
+.validInputEmail {
+  border-color: #50c878;
+  box-shadow: 0 0 5px #50c878;
+}
+.invalidInput,
+.invalidInputEmail {
+  border-color: #ff0000;
+  box-shadow: 0 0 5px #ff0000;
 }

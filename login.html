@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./loginStyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="loginPage">
+        <div class="loginPage-left">
+          <div class="logo">LOGO</div>
+          <h2>Log In</h2>
+          <div class="username">
+            <label for="username" class="username-text">Username</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="username"
+            />
+          </div>
+          <div class="pass">
+            <div class="pass-text">
+              <label for="Password" class="pass-text">Password</label>
+              <label for="ForgotPass" class="forgotpass"
+                >Forgot Password ?</label
+              >
+            </div>
+            <div class="password-field">
+            <input
+              type="password"
+              id="Pass"
+              name="Pass"
+              placeholder="*********"
+            />
+            <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+            </div>
+          </div>
+          <input type="button" value="LOGIN IN" class="login-button" onclick="checkValid()" />
+          <p class="continueW">or continue with</p>
+          <div class="login-methods">
+            <input
+              type="button"
+              class="login-methods-button login-methods-button-google"
+            />
+            <input
+              type="button"
+              class="login-methods-button login-methods-button-github"
+            />
+            <input
+              type="button"
+              class="login-methods-button login-methods-button-facebook"
+            />
+          </div>
+          <div class="signup">
+            <p class="noAccount">Don’t have an account yet?</p>
+            <p class="signUp">Sign up for free</p>
+          </div>
+        </div>
+
+        <div class="loginPage-right">
+          <img
+            src="./loginImg/Character-working-laptop-sitting-chair.svg"
+            alt=""
+          />
+          <img src="./loginImg/cactus.svg" alt="" />
+        </div>
+      </div>
+      <div class="loginPageColor"></div>
+    </div>
+    <script src="loginScript.js"></script>
+  </body>
+</html>
