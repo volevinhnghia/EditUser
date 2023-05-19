@@ -2,12 +2,18 @@
   position: relative;
   width: 1920px;
   height: 1080px;
+  min-height: 100%;
+  min-width: 100%;
   z-index: 0;
   background: linear-gradient(
     90deg,
     rgba(0, 131, 176, 0.366) 0%,
     rgba(140, 86, 255, 0.378) 66.67%
   );
+}
+body{
+  min-height: 100%;
+  min-width: 100%;
 }
 .loginPage {
   position: absolute;
