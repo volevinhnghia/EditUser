@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1920px;
+  width: 100%;
   height: 1080px;
   min-height: 100%;
   min-width: 100%;
@@ -25,7 +25,7 @@ body {
 }
 .loginPage {
   position: absolute;
-  width: 1366px;
+  width: 75%;
   height: 849px;
   background: rgb(255, 255, 255);
   border-radius: 40px;
@@ -36,7 +36,7 @@ body {
 }
 .loginPageColor {
   position: absolute;
-  width: 489px;
+  width: 32%;
   height: 849px;
   margin-left: 24cm;
   z-index: 2;
@@ -50,7 +50,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   z-index: 10;
-  width: 30%;
+  width: 36%;
 }
 .loginPage-right {
   z-index: 10;
@@ -130,6 +130,8 @@ p {
 }
 img {
   z-index: 999;
+  max-width: 75%;
+  height: auto;
 }
 .input-group {
   display: flex;
@@ -158,6 +160,14 @@ img {
   content: url(./loginImg/loginArrow.svg);
   margin-right: 5px;
   font-size: 20px;
+}
+.login-methods {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 .login-methods-button {
   width: 125px;
@@ -218,4 +228,15 @@ img {
 }
 input[type="button"] {
   cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+  .loginPageColor{
+    display: none;
+  }
+  .loginPage-right{
+    display: none;
+  }
+  .loginPage-left{
+    width: 65%;
+  }
 }
