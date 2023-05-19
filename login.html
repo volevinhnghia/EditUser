@@ -30,16 +30,26 @@
               >
             </div>
             <div class="password-field">
-            <input
-              type="password"
-              id="Pass"
-              name="Pass"
-              placeholder="*********"
-            />
-            <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+              <input
+                type="password"
+                id="Pass"
+                name="Pass"
+                placeholder="*********"
+              />
+              <span
+                toggle="#password-field"
+                class="fa fa-fw fa-eye field-icon toggle-password"
+              ></span>
             </div>
           </div>
-          <input type="button" value="LOGIN IN" class="login-button" onclick="checkValid()" />
+          <div class="input-group" onclick="checkValid()">
+            <input
+              type="button"
+              value="LOGIN IN"
+              class="login-button"
+            />
+          </div>
+
           <p class="continueW">or continue with</p>
           <div class="login-methods">
             <input
